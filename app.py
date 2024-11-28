@@ -62,11 +62,6 @@ def submit():
 
         predicted_class = np.argmax(prediction, axis=1)[0]
 
-        # return jsonify({'Image Belong to the class =' : str(predicted_class)}), 200
-        # if predicted_class == 0:
-        #     return "Not a Diabetic retinopathy retinopathy Image with a Probability of", 200
-        # else:
-        #     return "Diabetic Retinopathy", 200
         if prediction[0][0] > prediction[0][1]:
             return "Not having a Diabetic retinopathy with a probability of {:.3f} %".format(prediction[0][0]*100), 200
         else:
