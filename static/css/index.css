@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid rgb(149, 255, 0);
+    flex-direction: column;
+    background: linear-gradient(45deg, black, rgb(183, 192, 8));
+}
+
+.header{
+    text-align: center;
+    font-family: math;
+    color: rgb(254, 254, 254);
+}
+
+form{
+    width: 27rem;
+}
+
+.label{
+    margin: 1rem;
+    font-family: serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.file{
+    margin: 1rem;
+    font-family: cursive;
+}
+
+.file:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.submit{
+    margin: 1rem;
+    font-family: serif;
+}
+
+.submit:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.container{
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 27rem;
+    margin: 2rem;
+}

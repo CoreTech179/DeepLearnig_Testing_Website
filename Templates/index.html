@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Retinopathy Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <h1 class="header">Diabetic Retinopathy Detector Wesbite</h1>
+
+    <div class="container">
+
+        <form action="/submit" method="post", enctype="multipart/form-data">
+    
+            <label for="file" class="label">Upload Image of a Eye:</label>
+            <div class="input">
+    
+                <input type="file" name="file" id="file" class="file">
+    
+            </div>
+    
+            <div class="button">
+    
+                <button type="submit" class="submit">Submit & Predict</button>
+    
+            </div>
+    
+        </form>
+
+    </div>
+</body>
+</html>
